@@ -52,21 +52,11 @@ body {
 
 
 
-#esa-popup {
-    display: block;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    padding: 20px;
-    background: rgb(66, 91, 74);
-    border-radius: 15px;
-    z-index: 1000;
-}
-
-
-#danie-popup {
+#esa-popup,
+#bodie-popup,
+#danie-popup,
+#chelsea-popup,
+#harlan-popup {
     display: none;
     position: fixed;
     top: 50%;
@@ -74,12 +64,32 @@ body {
     transform: translate(-50%, -50%);
     width: 800px;
     padding: 20px;
-    background: rgb(66, 91, 74);
     border-radius: 15px;
     z-index: 1000;
 }
 
+#esa-popup {
+    background-color: rgb(223, 209, 209);
+}
+#bodie-popup {
+    background-color: rgb(228, 226, 189);
+}
+#danie-popup {
+    background-color: rgb(141, 154, 99);
+}
+#chelsea-popup {
+    background-color: rgb(161, 142, 163);
+}
+#harlan-popup {
+    background-color: rgb(164, 214, 216);
+}
+
+
+
 #esa-icon,
+#bodie-icon,
+#chelsea-icon,
+#harlan-icon, 
 #danie-icon {
     cursor: pointer;
 }

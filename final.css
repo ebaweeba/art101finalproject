@@ -154,6 +154,13 @@ body {
     margin: 15px auto;
 }
 
+.bodierecord {
+    width: 250px;
+    display: block;
+    margin: 15px auto;
+}
+
+
 #play-song {
     font-size: smaller;
     font-family: helvetica, sans-serif;

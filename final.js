@@ -87,6 +87,18 @@ $("#close-esa").click(function () {
 });
 
 
+$("#bodie-icon").click(function () {
+    $("#overlay").show();
+    $("#bodie-popup").show();
+});
+
+$("#close-bodie").click(function () {
+    $("#bodie-popup").hide();
+    $("#overlay").hide();
+});
+
+
+
 $("#overlay").click(function () {
 
     $("#overlay").hide();

@@ -97,6 +97,37 @@ $("#close-bodie").click(function () {
     $("#overlay").hide();
 });
 
+$("#danie-icon").click(function () {
+    $("#overlay").show();
+    $("#danie-popup").show();
+});
+
+$("#close-danie").click(function () {
+    $("#danie-popup").hide();
+    $("#overlay").hide();
+});
+
+$("#chelsea-icon").click(function () {
+    $("#overlay").show();
+    $("#chelsea-popup").show();
+});
+
+$("#close-chelsea").click(function () {
+    $("#chelsea-popup").hide();
+    $("#overlay").hide();
+});
+
+
+$("#harlan-icon").click(function () {
+    $("#overlay").show();
+    $("#harlan-popup").show();
+});
+
+$("#close-harlan").click(function () {
+    $("#harlan-popup").hide();
+    $("#overlay").hide();
+});
+
 
 
 $("#overlay").click(function () {

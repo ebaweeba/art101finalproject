@@ -14,6 +14,7 @@ $("#close-esa").click(function () {
 $("#bodie-icon").click(function () {
 
     $("#bodie-popup").show();
+    $(".location").hide();
 
 });
 
@@ -145,18 +146,26 @@ $("#overlay").click(function () {
 
 $("#inside").click(function () {
     console.log("inside")
-    $("entry").hide();
+    $("#entry").hide();
     $("#inside-div").show();
 });
 
 $("#roof").click(function () {
     console.log("roof")
-    $("entry").hide();
+    $("#entry").hide();
     $("#roof-div").show();
 });
 
 $("#yard").click(function () {
     console.log("yard")
-    $("entry").hide();
+    $("#entry").hide();
     $("#yard-div").show();
+});
+
+$(".back").click(function () {
+    console.log("back")
+    $("#yard-div").hide();
+    $("#roof-div").hide();
+    $("#inside-div").hide();
+    $("#entry").show();
 });

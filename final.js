@@ -75,6 +75,32 @@ $("#play-song").click(function () {
     }
 });
 
+$("#play-roof-song").click(function () {
+
+    let song = $("#roof-song")[0];
+
+    if (song.paused) {
+        song.play();
+        $(this).text("⏸ pause song");
+    } else {
+        song.pause();
+        $(this).text("▶ play song");
+    }
+});
+
+$("#play-roof-song").click(function () {
+
+    let song = $("#roof-song")[0];
+
+    if (song.paused) {
+        song.play();
+        $(this).text("⏸ pause song");
+    } else {
+        song.pause();
+        $(this).text("▶ play song");
+    }
+});
+
 
 $("#esa-icon").click(function () {
     $("#overlay").show();

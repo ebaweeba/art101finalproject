@@ -130,39 +130,27 @@
 
     <div id="bodie-popup">
         <button id="close-bodie">✕</button>
-        <h2>Bodie's Party</h2>
-        <div class="location" id="roof">
-            <h2>on the roof they're listening to</h2>
+        <div id="entry">
+            <h2>at Bodie's party, guests are dancing inside, in the yard, and on the roof.</h2>
+            <div id="bodie-house"><img src="images/bodie-house.png"></div>
+        
+        
+            <h2>who would you like to join?</h2>
+            <button class="location-playlist-button" id="inside">inside</button>
+            <button class="location-playlist-button" id="roof">roof</button>
+            <button class="location-playlist-button" id="yard">yard</button>
+        </div>
+        
+        <div class="location" id="yard-div">
+            <h2>this is the playlist in the yard</h2>
+            
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1qhycKiP0XdsEaUvJF8261?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
 
-            <img src="images/anti-cover.jpg" class="bodierecord" id="antirecord">
-
-            <button id="play-roof-song">
-                ▶ anti - sob x rbe
-            </button>
-
-            <audio id="roof-song">
-                <source src="audio/anti.mp3" type="audio/mpeg">
-            </audio>
         </div>
 
-        <div class="location" id="inside">
-            <h2>inside they're bumping</h2>
-
-            <img src="images/recorddeals-cover.jpg" class="bodierecord" id="recorddealsrecord">
-
-            <button id="play-inside-song">
-                ▶ recorddeals - 1905
-            </button>
-
-            <audio id="inside-song">
-                <source src="audio/recorddeals.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-
-        <p>
-            Bodie's throwing a rave.
-        </p>
     </div>
+
 
 
     <div id="danie-popup">

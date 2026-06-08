@@ -241,6 +241,11 @@ body {
     margin-right: 20px;
 }
 
+#bodie-house img {
+    width: 500px;
+
+}
+
 #bodie-background {
     background-color: #77d9ab;
 }

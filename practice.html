@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>H4US P4RTY!</title>
+
+    <link rel="stylesheet" href="final.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="final.js" defer></script>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <h1>H4US P4RTY!</h1>
+
+        <div id="instructions">
+            <h3>
+                Click on a group member and find out what house party
+                they're hosting or going to!
+            </h3>
+        </div>
+
+
+        <div class="members">
+
+            <div class="member" id="esa-icon">
+                <div class="member-background" id="esa-background">
+                    <img src="images/esadrawing.png" alt="Esa">
+                </div>
+                <p>Esa</p>
+            </div>
+
+            <div class="member" id="danie-icon">
+                <div class="member-background" id="danie-background">
+                    <img src="images/danie.png" alt="Danie">
+                </div>
+                <p>Danie</p>
+            </div>
+
+            <div class="member" id="bodie-icon">
+                <div class="member-background" id="bodie-background">
+                    <img src="images/bodie.png" alt="Bodie">
+                </div>
+                <p>Bodie</p>
+            </div>
+
+            <div class="member" id="chelsea-icon">
+                <div class="member-background" id="chelsea-background">
+                    <img src="images/chelsea.png" alt="Chelsea">
+                </div>
+                <p>Chelsea</p>
+            </div>
+
+            <div class="member" id="harlan-icon">
+                <div class="member-background" id="harlan-background">
+                    <img src="images/harlan.png" alt="Harlan">
+                </div>
+                <p>Harlan</p>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div id="esa-popup">
+
+            <button id="close-esa">✕</button>
+
+            <h1>⋆｡𖦹°⭒˚｡⋆ <em>you're invited!</em> ⋆｡𖦹°⭒˚｡⋆</h1>
+
+            <div class="esa-details">
+                <div class="photo-area">
+
+                    <h2><strong>your most gracious host...ESA!</strong></h2>
+                    <img src="images/esadrawing.png" id="my-photo">
+
+                </div>
+
+                <div class="info-box">
+
+                    <p>
+                        <strong>how to get in?</strong><br>
+                        must bring a dog to enter but it's NOTAFLOF! <3 <br>
+                    </p>
+
+                    <img src="images/trouble.jpg" id="trouble">
+                    <p>(here's my dog, trouble!)</p>
+
+
+                    <p>
+                        <strong>the vibe:</strong><br>
+                        wear your best outfit, very chill, don't be allergic to dogs, ice cream sandwiches<br>
+                    </p>
+                </div>
+
+                <div class="pregame">
+                    <h2>listen to my getting ready song!</h2>
+
+                    <img src="images/bleachers2.png" id="bleachersrecord">
+
+                    <button id="play-song">
+                        ▶ rollercoaster - bleachers
+                    </button>
+
+                    <audio id="getting-ready-song">
+                        <source src="audio/rollercoaster.mp3" type="audio/mpeg" 
+                    </audio>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="bodie-popup">
+        <button id="close-bodie">✕</button>
+        <div id="entry">
+            <h2>at Bodie's party, guests are dancing inside, in the yard, and on the roof.</h2>
+            <div id="bodie-house"><img src="images/bodie-house.png"></div>
+
+
+            <h2>who would you like to join?</h2>
+            <button class="location-playlist-button" id="inside">inside</button>
+            <button class="location-playlist-button" id="roof">roof</button>
+            <button class="location-playlist-button" id="yard">yard</button>
+        </div>
+
+        <div class="location" id="yard-div">
+            <h2>this is the playlist in the yard</h2>
+
+            <button class="back">go back</button>
+
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/1qhycKiP0XdsEaUvJF8261?utm_source=generator" width="100%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+
+        </div>
+
+        <div class="location" id="inside-div">
+            <h2>this is the playlist inside</h2>
+
+            <button class="back">go back</button>
+
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/22OyxlA9RKpBQLCK4SQUr6?utm_source=generator" width="100%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+
+        </div>
+
+        <div class="location" id="roof-div">
+            <h2>this is the playlist on the roof</h2>
+
+            <button class="back">go back</button>
+
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/2vdE2ekGN2gUmcdQXoXOY2?utm_source=generator" width="100%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+
+    <div id="danie-popup">
+        <button id="close-danie">✕</button>
+        <h2>Danie's Party</h2>
+        <p>
+            <div id="danie-popup">
+    <button id="close-danie">Exit</button>
+
+    <h1><em>ִ ࣪ ˖ ࣪ ᨰꫀᥣᥴ᥆ꩇꫀ ! ᰔ ִ ׄ</em></h1>
+    <h2>Danie's Party</h2>
+
+    <p>
+        Danie is hosting a chill night in with snacks,
+        blankets, and house music.
+    </p>
+
+    <button onclick="moveImage()">Move Image</button>
+
+    <img src="food.jpeg" id="my-photo" alt="Food">
+
+    <!-- Popup -->
+    <div class="popup" onclick="myFunction()">
+        Click me!
+        <span class="popuptext" id="popup-text">
+            Snacks and food!
+        </span>
+    </div>
+
+    <div class="danie-details">
+
+        <div class="photo-area">
+            <h2><strong>How are you today?</strong></h2>
+
+            <button id="danie-button">
+                Danie's Party
+            </button>
+        </div>
+
+        <div class="info-box">
+            <p>
+                <strong>What's the vibe?</strong><br>
+                Arts and crafts + Chill! &lt;3
+            </p>
+
+            <img src="movie01.jpeg" id="trouble" alt="Movie Preference">
+
+            <p>(movie preference!)</p>
+
+            <p>
+                <strong>The vibe:</strong><br>
+                Wear your best outfit, bring house music ideas, and enjoy matcha making!
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h2><strong>Welcome to my party!</strong></h2>
+
+            <img src="danie02.jpg" id="danie-photo" alt="Danie">
+        </div>
+
+        <div class="info-box">
+            <p>
+                <strong>How do you like your matcha?</strong><br>
+                Options for matcha! &lt;3
+            </p>
+
+            <img src="matcha.jpeg" id="matcha" alt="Matcha">
+
+            <p>(matcha materials!)</p>
+
+            <p>
+                <strong>The vibe:</strong><br>
+                What is the vibe for the day?
+            </p>
+        </div>
+
+        <div class="pregame">
+            <h2>Activities 🃜🃚🃖🃁🂭🂺</h2>
+
+            <img src="activity.jpeg" id="activity" alt="Party Activities">
+        </div>
+
+    </div>
+</div>
+        </p>
+
+
+
+
+    </div>
+
+    <div id="chelsea-popup">
+        <button id="close-chelsea">✕</button>
+        <h2>Chelsea's Party</h2>
+        <p>
+            Chelsea is hosting a girl's night!
+        </p>
+    </div>
+
+    <div id="harlan-popup">
+        <button id="close-harlan">✕</button>
+
+        <h1>welcome to harlan's party!</h1>
+
+        <div class="harlan-details">
+            <div class="photo-area">
+
+                <h2><strong>dis is harlan</strong></h2>
+                <img src="images/harlan.png" id="my-photo">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    
+    <div id="overlay"></div>
+
+</body>
+
+</html>

@@ -27,14 +27,25 @@ $("#close-bodie").click(function () {
 $("#danie-icon").click(function () {
 
     $("#danie-popup").show();
+    $("#overlay").show();
 
 });
 
 $("#close-danie").click(function () {
 
     $("#danie-popup").hide();
+    $("#overlay").hide();
 
 });
+function myFunction() { 
+    var popup = document.getElementById("popup-text");
+    popup.classList.toggle("show");
+}
+function moveImage() { 
+    let image = document.getElementById("my-photo");
+    image.style.marginLeft = "500px";
+    image.style.marginTop = "200px";    
+}
 
 $("#chelsea-icon").click(function () {
 
@@ -105,7 +116,14 @@ $("#danie-icon").click(function () {
 $("#close-danie").click(function () {
     $("#danie-popup").hide();
     $("#overlay").hide();
+    
 });
+
+function myFunction () { var popup = document.getElementById("popup-text");
+popup.classList.toggle("show");
+}
+
+
 
 $("#chelsea-icon").click(function () {
     $("#overlay").show();
@@ -127,7 +145,7 @@ $("#close-harlan").click(function () {
     $("#harlan-popup").hide();
     $("#overlay").hide();
 });
-
+ 
 
 
 $("#overlay").click(function () {
@@ -141,6 +159,4 @@ $("#overlay").click(function () {
     $("#harlan-popup").hide();
 
 });
-
-
 

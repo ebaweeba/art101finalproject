@@ -292,8 +292,13 @@ popup .popuptext {
 }
 
 
+#bodie-house img {
+    width: 500px;
+
+}
+
 #bodie-background {
-    background-color: darkcyan;
+    background-color: #77d9ab;
 }
 
 #esa-background {

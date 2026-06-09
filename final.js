@@ -14,6 +14,7 @@ $("#close-esa").click(function () {
 $("#bodie-icon").click(function () {
 
     $("#bodie-popup").show();
+    $(".location").hide();
 
 });
 
@@ -85,7 +86,6 @@ $("#play-song").click(function () {
         $(this).text("▶ play song");
     }
 });
-
 
 $("#esa-icon").click(function () {
     $("#overlay").show();
@@ -160,3 +160,28 @@ $("#overlay").click(function () {
 
 });
 
+$("#inside").click(function () {
+    console.log("inside")
+    $("#entry").hide();
+    $("#inside-div").show();
+});
+
+$("#roof").click(function () {
+    console.log("roof")
+    $("#entry").hide();
+    $("#roof-div").show();
+});
+
+$("#yard").click(function () {
+    console.log("yard")
+    $("#entry").hide();
+    $("#yard-div").show();
+});
+
+$(".back").click(function () {
+    console.log("back")
+    $("#yard-div").hide();
+    $("#roof-div").hide();
+    $("#inside-div").hide();
+    $("#entry").show();
+});
